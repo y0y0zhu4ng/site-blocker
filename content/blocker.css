@@ -1,0 +1,51 @@
+#site-blocker-host {
+  all: initial;
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 2147483647 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  display: block !important;
+}
+
+#site-blocker-host .blocker {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 30px;
+  background: radial-gradient(
+    68.34% 50% at 50% 50%,
+    #2d9aff 0%,
+    #41dee8 0%,
+    #a22dff 100%
+  );
+}
+
+#site-blocker-host h1,
+#site-blocker-host .blocker__message {
+  margin: 0;
+  color: #fff;
+  font-family: monospace;
+  font-weight: bold;
+  text-align: center;
+}
+
+#site-blocker-host .blocker__title {
+  margin: 0;
+  color: #fff;
+  font-family: monospace;
+  font-weight: bold;
+  text-align: center;
+}
+
+#site-blocker-host h1 {
+  font-size: 10vw;
+}
+
+#site-blocker-host .blocker__message {
+  font-size: 5vw;
+}
